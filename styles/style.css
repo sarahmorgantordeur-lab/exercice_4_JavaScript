@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(202, 228, 238);
+}
+
+.perso {
+    border : solid ;
+    border-color:  aliceblue;
+    background-color: aliceblue;
+    border-radius: 15px;
+    width: 20%;
+    height:25rem;
+    margin : 10px;
+    padding : 3px;
+    align-items: stretch;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* effet fluide du survol */
+}
+
+.perso:hover{
+    background-color: rgb(230, 209, 170) ;
+    border-color: rgb(221, 189, 130) ;
+    box-shadow: 0 10px 20px rgba(211, 174, 89, 0.926);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: rotate(1deg);
+} 
+
+.persos {
+    display: flex;
+    /* align-items: center; */
+    flex-flow: row wrap !important;
+    justify-content: center;
+}
+
+.caracter {
+    display: flex;
+    padding-left: 3px ;
+    box-shadow: inset 0 0 10px rgba(141, 139, 139, 0.5);
+    transform: scale(0.7);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* effet fluide du survol */
+}
+
+.caracter:hover {
+    border-color: rgb(221, 189, 130) ;
+    box-shadow: 0 10px 20px rgba(211, 174, 89, 0.926);
+    transform: scale(0.8) rotate(1deg);
+}
+
+
+.statusAlive {
+    border : solid ;
+    border-color: rgb(90, 190, 90) ;
+    border-radius: 15px;
+    background-color: rgb(111, 231, 111);
+    padding-left : 3%;
+    padding-right: 3%;
+    margin: 3px;
+}
+
+.statusDeceased {
+    border : solid ;
+    border-radius: 15px;
+    border-color: rgb(194, 111, 96) ;
+    background-color: rgb(236, 134, 117);
+    padding-left : 3%;
+    padding-right: 3%;
+    margin: 3px;
+}
+
+.logo {
+
+    justify-content: flex-start;
+    margin-left: 15px;
+    border-radius: 15px;
+    overflow: hidden; /* coupe les coins de l’image si nécessaire */
+    display: block;
+}
+
+
+.age {
+    border : solid ;
+    border-radius: 15px;
+    border-color: rgb(165, 161, 161) ;
+    background-color: rgb(196, 192, 192);
+    padding-left : 3%;
+    padding-right: 3%;
+    margin-bottom: 2px;
+    width:fit-content ;
+    margin : 3px;
+}
+
+.ageStatus {
+    display : flex;
+    flex-direction: row ;
+    justify-content: center;
+    width :70%;
+    align-items: flex-end;
+    
+
+}
+
